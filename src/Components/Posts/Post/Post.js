@@ -24,7 +24,7 @@ const Post = ({ post, setCurrentId }) => {
     <Card className={classes.card}>
       <CardMedia
         className={classes.media}
-        image={Post.selectedFile}
+        image={post.selectedFile}
         title={post.title}
       />
       <div className={classes.overlay}>
@@ -46,7 +46,7 @@ const Post = ({ post, setCurrentId }) => {
       </div>
       <div className={classes.details}>
         <Typography variant="body2" color="textSecondary">
-          {post.tags.map((tag) => `# ${tag}`)}
+          {post.tags.map((tag) => `#${tag} `)}
         </Typography>
       </div>
       <Typography className={classes.title} variant="h5" gutterBottom>
