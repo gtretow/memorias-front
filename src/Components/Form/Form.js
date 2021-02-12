@@ -29,7 +29,7 @@ const Form = ({ currentId, setCurrentId }) => {
     setCurrentId(null);
     setPostData({
       creator: "",
-      tittle: "",
+      title: "",
       message: "",
       tags: "",
       selectedFile: "",
